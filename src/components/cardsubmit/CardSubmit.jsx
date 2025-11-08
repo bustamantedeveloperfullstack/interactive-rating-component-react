@@ -1,13 +1,21 @@
-import React from 'react';
-import { CardButton } from './cardbutton/CardButton';
+import { CardButton } from '../cardbutton/CardButton';
+import './CardSubmit.css';
 
 export const CardSubmit = ({ rating, setRating, onSubmit }) => {
   const handleRatingClick = (value) => setRating(value);
 
   return (
     <section className='card-submit'>
-      <h2>How did we do?</h2>
-      <p>Please let us know your rating.</p>
+      <img
+        src='/public/icon-star.svg'
+        alt='icon star'
+        className='img'
+      />
+      <h2 className='title'>How did we do?</h2>
+      <p className='paragraph'>
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
       <div className='rating-buttons'>
         {[...Array(5)].map((_, value) => (
           <CardButton
@@ -22,7 +30,7 @@ export const CardSubmit = ({ rating, setRating, onSubmit }) => {
         className='submit-button'
         onClick={onSubmit}
       >
-        Submit
+        SUBMIT
       </button>
     </section>
   );

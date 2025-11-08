@@ -1,12 +1,12 @@
-import React from 'react';
+import './CardThankyou.css';
 
 export const CardThankyou = ({ rating }) => {
   return (
-    <div>
+    <div className='card-thankyou'>
       <img
         src='/illustration-thank-you.svg'
         alt='thank you illustration'
-        className='card-img'
+        className='img-illustration'
       />
       <h3>You selected {rating} of 5</h3>
       <h2>Thank you!</h2>

@@ -1,3 +1,3 @@
 export { CardButton } from './cardbutton/CardButton.jsx';
-export { CardSubmit } from './CardSubmit.jsx';
-export { CardThankyou } from './CardThankyou.jsx';
+export { CardSubmit } from './cardsubmit/CardSubmit.jsx';
+export { CardThankyou } from './cardthankyou/CardThankyou.jsx';

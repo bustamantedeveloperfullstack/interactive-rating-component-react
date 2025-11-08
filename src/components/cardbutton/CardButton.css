@@ -1,26 +1,31 @@
-.card-button {
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  color: white;
-  background-color: #2c2c2c;
-  margin: 5px;
-  padding: 0 10px;
+.button {
+  width: var(--height-botton);
+  height: var(--height-botton);
+  font-weight: 700;
+  color: hsl(217, 12%, 63%);
+  background-color: hsl(213, 19%, 18%);
+  padding: 0;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
   border-radius: 50%;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.card-button.selected {
-  background-color: orange;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-}
-.card-button:hover {
-  background-color: #555;
+.button.selected {
+  color: hsl(216, 12%, 8%);
+  background-color: hsl(0, 100%, 100%);
+  outline: inherit;
+  border: inherit;
 }
 
-.card-button:active {
+.button:hover {
+  color: hsl(216, 12%, 8%);
+  background-color: hsl(25, 97%, 53%);
+  outline: inherit;
+  border: inherit;
+}
+
+.button:active {
   transform: scale(0.95);
 }
