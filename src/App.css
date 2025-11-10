@@ -28,12 +28,21 @@ body {
 .card {
   width: 380px;
   height: 380px;
-  padding: 2em;
   background-color: hsl(216, 12%, 8%);
-  /* background-color: #00ffea42; */
   padding: 28px 22px;
   margin: 0 auto;
   margin-top: 30px;
   border-radius: 12px;
-  text-align: left;
+}
+
+@media screen and (max-width: 500px) {
+.card {
+  width: 320px;
+  height: 390px;
+  }
+
+  .paragraph {
+    font-size: 0.8rem;
+  }
+  
 }
